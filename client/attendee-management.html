@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendee Management</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Attendee Management</h1>
+    <div id="attendee-management-section">
+      <!-- Buttons to navigate between options -->
+      <button id="view-attendees-btn">View Attendees</button>
+      <button id="add-attendees-btn">Add Attendee</button>
+      <button id="delete-attendees-btn">Delete Attendee</button>
+    </div>
+
+    <!-- Sections -->
+    <div id="view-attendees-section" style="display: none;">
+      <h2>All Attendees</h2>
+      <div id="attendee-list"></div>
+    </div>
+
+    <div id="add-attendees-section" style="display: none;">
+      <h2>Add Attendee</h2>
+      <form id="attendee-form">
+        <input type="text" id="attendee-name" placeholder="Attendee Name" required />
+        <input type="email" id="attendee-email" placeholder="Attendee Email" required />
+        <input type="text" id="event-id" placeholder="Event ID" required />
+        <button type="submit">Add Attendee</button>
+      </form>
+    </div>
+
+    <div id="delete-attendees-section" style="display: none;">
+      <h2>Delete Attendee</h2>
+      <form id="delete-attendee-form">
+        <input type="email" id="delete-attendee-email" placeholder="Attendee Email" required />
+        <button type="submit">Delete Attendee</button>
+      </form>
+    </div>
+  </div>
+  <script src="js/attendee.js"></script>
+</body>
+</html>
